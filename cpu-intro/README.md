@@ -2,16 +2,16 @@
 # Overview
 
 This program, called process-run.py, allows you to see how the state of a
-process state changes as it runs on a CPU. As described in the chapter, 
-processes can be in a few different states:
+process state changes as it runs on a CPU. As described in the chapter,  
 
-```sh
-RUNNING - the process is using the CPU right now
-READY   - the process could be using the CPU right now
-          but (alas) some other process is
-BLOCKED - the process is waiting on I/O
-          (e.g., it issued a request to a disk)
-DONE    - the process is finished executing
+```yaml
+processes can be in a few different states:
+- RUNNING:  the process is using the CPU right now
+- READY:    the process could be using the CPU right now
+            but (alas) some other process is
+- BLOCKED:  the process is waiting on I/O
+            (e.g., it issued a request to a disk)
+- DONE:     the process is finished executing
 ```
 
 In this homework, we'll see how these process states change as a program
